@@ -78,14 +78,6 @@ void System::iterationMethod(){
                    phi[i][j] = (phi1[i+1][j] + phi1[i-1][j] + phi1[i][j+1] + phi1[i][j-1]) / 4.0;
                }
         }
-        /*for (int i = 0; i < DIM; i++) {
-               for (int j = 0; j < DIM; j++) {
-                   temp = std::abs(phi[i][j] - phi1[i][j]);
-                   if (maximum > temp){
-                       maximum = temp;
-                   }
-               }
-        }*/
         i++;
     }
 
